@@ -37,19 +37,19 @@ public class ConvertCls {
     public void setOutAmnt(Double outAmnt) {
         switch (toCrrn) {
             case "bric":
-                outAmnt = inAmnt * 100;
+                outAmnt = inAmnt * 0.005;
                 break;
             case "usd":
-                outAmnt = inAmnt * 20;
+                outAmnt = inAmnt * 0.053;
                 break;
             case "eur":
-                outAmnt = inAmnt * 27;
+                outAmnt = inAmnt * 0.049;
                 break;
             case "yen":
-                outAmnt = inAmnt * 15;
+                outAmnt = inAmnt * 7.7;
                 break;
             case "nar":
-                outAmnt = inAmnt * 0.25;
+                outAmnt = inAmnt * 40;
                 break;
             default:
                 outAmnt = inAmnt;
